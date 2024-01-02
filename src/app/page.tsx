@@ -3,7 +3,9 @@ import HomePage from './home/page'
 export default function Home() {
   return (
     <>
-    <HomePage />
+    <div className="bg-black">
+      <HomePage />
+    </div>
     </>
   )
 }
