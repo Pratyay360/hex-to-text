@@ -6,8 +6,12 @@ export default function Home() {
     function clickClear() {
         var hex = document.getElementById("hex") as HTMLTextAreaElement;
         var text = document.getElementById("text") as HTMLTextAreaElement;
-        hex.value = "";
-        text.value = "";
+        if (!hex.value && !text.value) {
+            alert("Nothing to clear");
+        } else {
+            hex.value = "";
+            text.value = "";
+        }
     }
     function clickHandler() {
         var hex = document.getElementById("hex") as HTMLTextAreaElement;
@@ -51,7 +55,7 @@ export default function Home() {
                 Hex {"<"}--{">"} Text </h1>
             <section className="text-gray-300 body-font">
                 <div className="container px-5 py-14 mx-auto">
-                    <div className="flex flex-wrap -m-10 justify-center whitespace-break-spaces">
+                    <div className="flex-wrap -my-10 justify-center whitespace-pre-line">
                         {isClient ?
                             (
                                 <div className="flex flex-col space-y-5">
