@@ -33,4 +33,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 *.lock.json
-package-lock.json
+package-lock.json# OpenNext
+.open-next
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
