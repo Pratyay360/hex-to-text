@@ -1,15 +1,16 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "hex-to-text",
-  "main": "dist/_worker.js/index.js",
-  "compatibility_date": "2025-09-27",
+	"main": "dist/_worker.js/index.js",
+	"name": "hex-to-text",
+  "compatibility_date": "2026-02-25",
   "compatibility_flags": [
-    "nodejs_compat"
+    "nodejs_compat",
+    "global_fetch_strictly_public"
   ],
-  "assets": {
-    "directory": "dist"
-  },
-  "observability": {
+	"assets": {
+		"binding": "ASSETS",
+		"directory": "./dist"
+	},
+	"observability": {
     "enabled": true
   }
 }
