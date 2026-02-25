@@ -3,19 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "deploy": "wrangler deploy",
     "cf-typegen": "wrangler types"
   },
   "dependencies": {
-    "@opennextjs/cloudflare": "^1.17.1",
+    "@astrojs/cloudflare": "^12.6.12",
+    "@astrojs/react": "^4.4.2",
     "@tailwindcss/postcss": "^4.2.1",
+    "@tailwindcss/vite": "^4.2.1",
+    "astro": "^5.17.3",
     "hex-to-text": ".",
-    "next": "16.1.5",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "tailwindcss": "^4.2.1"
@@ -26,7 +28,6 @@
     "@types/react-dom": "^19.2.3",
     "autoprefixer": "^10.4.24",
     "eslint": "^9.39.3",
-    "eslint-config-next": "16.1.0",
     "postcss": "^8.5.6",
     "typescript": "^5.9.3",
     "wrangler": "^4.68.1"
