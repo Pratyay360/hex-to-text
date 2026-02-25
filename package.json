@@ -12,28 +12,22 @@
     "cf-typegen": "wrangler types"
   },
   "dependencies": {
-    "@opennextjs/cloudflare": "^1.16.1",
-    "@tailwindcss/postcss": "^4.1.18",
-<<<<<<< HEAD
-    "next": "16.1.0",
+    "@opennextjs/cloudflare": "^1.17.1",
+    "@tailwindcss/postcss": "^4.2.1",
+    "next": "16.1.5",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-=======
-    "next": "16.1.5",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3",
->>>>>>> c7cb480196f273424b10323ba99be5ed502d80d9
-    "tailwindcss": "^4.1.18"
+    "tailwindcss": "^4.2.1"
   },
   "devDependencies": {
-    "@types/node": "^25.1.0",
-    "@types/react": "^19.2.10",
+    "@types/node": "^25.3.0",
+    "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "autoprefixer": "^10.4.24",
-    "eslint": "^9.39.2",
+    "eslint": "^9.39.3",
     "eslint-config-next": "16.1.0",
     "postcss": "^8.5.6",
     "typescript": "^5.9.3",
-    "wrangler": "^4.61.1"
+    "wrangler": "^4.68.1"
   }
 }
